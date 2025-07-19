@@ -1,15 +1,15 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import ProductDetails from './pages/ProductDetails';
-import Navbar from './components/Navbar';
-import Footer from './components/Footer';
-import './index.css'; // Tailwind CSS import
+import Navbar from './Components/Navbar';
+import Footer from './Components/Footer';
+import './index.css';
 
 function App() {
   return (
-    <Router>
+    <>
       <Navbar />
       <div className="p-4 min-h-screen bg-gray-100">
         <Routes>
@@ -20,7 +20,7 @@ function App() {
         </Routes>
       </div>
       <Footer />
-    </Router>
+    </>
   );
 }
 
